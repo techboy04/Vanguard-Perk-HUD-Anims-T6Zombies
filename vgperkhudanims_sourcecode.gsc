@@ -222,10 +222,5 @@ give_perk_override( perk, bought )
     self.perks_active[self.perks_active.size] = perk;
     self notify( "perk_acquired" );
     self thread perk_think( perk );
-    self iprintln(perk);
     self perkHUD(perk);
 }
-
-
-
-
